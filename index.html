@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mark Jay Balasan — Technical Solutions Consultant</title>
+<title>Mark Jay Balasan | Technical Support &amp; Integrations Specialist</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
@@ -15,8 +15,6 @@
     --hairline: #DADDE3;
     --signal: #1E7A5F;
     --signal-soft: #E4F1EB;
-    --amber: #B9781F;
-    --amber-soft: #F6EBDA;
     --font-display: 'Space Grotesk', 'Avenir Next', 'Segoe UI', sans-serif;
     --font-body: 'Inter', 'Segoe UI', sans-serif;
     --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
@@ -208,10 +206,6 @@
     white-space: nowrap;
   }
   .status.resolved  { background: var(--signal-soft); color: var(--signal); }
-  .status.shipped    { background: var(--signal-soft); color: var(--signal); }
-  .status.published  { background: #E7EEFA; color: #2C5DAA; }
-  .status.progress   { background: var(--amber-soft); color: var(--amber); }
-  .status.active     { background: #EFEAFB; color: #6A4CB0; }
 
   /* log-stream list (experience + projects) */
   .stream { position: relative; margin-left: 6px; }
@@ -263,28 +257,27 @@
     margin-top: 8px;
   }
 
-  /* learning path */
-  .learn-grid {
+  /* services */
+  .service-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 14px;
   }
-  @media (max-width: 620px) { .learn-grid { grid-template-columns: 1fr; } }
-  .learn-card {
+  @media (max-width: 720px) { .service-grid { grid-template-columns: 1fr; } }
+  .service-card {
     background: var(--bg-raised);
     border: 1px solid var(--hairline);
     border-radius: 10px;
-    padding: 16px 18px;
+    padding: 18px 18px 16px;
   }
-  .learn-card .phase-label {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--ink-soft);
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
+  .service-card h3 {
+    font-family: var(--font-display);
+    font-size: 16px;
+    margin: 0 0 8px;
   }
-  .learn-card h4 { font-family: var(--font-display); font-size: 15.5px; margin: 6px 0 6px; }
-  .learn-card p { font-size: 13.5px; color: var(--ink-soft); margin: 0; }
+  .service-card p { font-size: 13.5px; color: var(--ink-soft); margin: 0 0 10px; }
+  .service-card ul { margin: 0; padding-left: 16px; font-size: 13.5px; }
+  .service-card ul li { margin-bottom: 4px; }
 
   /* skills */
   .skill-group { margin-bottom: 20px; }
@@ -333,8 +326,8 @@
   <div class="nav-inner">
     <div class="nav-name">MAC BALASAN</div>
     <nav class="nav-links">
+      <a href="#services">Services</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -344,9 +337,9 @@
 <main class="wrap">
 
   <section class="hero">
-    <div class="badge"><span class="dot"></span> STATUS: OPEN FOR WORK</div>
+    <div class="badge"><span class="dot"></span> AVAILABLE FOR FREELANCE WORK</div>
     <h1 class="headline">If it's broken, scheduled, or buried in a spreadsheet — I can take it off your plate.</h1>
-    <p class="sub">6+ years across technical troubleshooting, ERP/accounting integrations (MYOB, Xero, QuickBooks, NetSuite, Unleashed), calendar & cross-timezone coordination, appointment setting, and high-volume data entry. One person who covers more than one lane, so you don't need three different hires.</p>
+    <p class="sub">8+ years across technical troubleshooting, ERP/accounting integrations (MYOB, Xero, QuickBooks, NetSuite, Unleashed), banking and billing support, calendar & cross-timezone coordination, appointment setting, and high-volume data entry. One person who covers more than one lane, so you don't need three different hires.</p>
 
     <div class="pills" style="margin-bottom:28px;">
       <span class="pill">Technical Support & Integrations</span>
@@ -362,33 +355,70 @@
     </div>
 
     <div class="contact-row">
-      <a class="btn primary" href="mailto:careers.markjaybalasan@gmail.com">Email me</a>
+      <a class="btn primary" href="mailto:mac.balasan@gmail.com">Email me</a>
       <a class="btn" href="https://wa.me/639563097416" target="_blank" rel="noopener">WhatsApp</a>
       <a class="btn" href="https://www.linkedin.com/in/mac-balasan" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="#projects">See projects</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-head">
+      <span class="tag">01</span>
+      <h2>What I can do for you</h2>
+    </div>
+    <p class="lead">Three lanes, one person, working remotely from Manila.</p>
+
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Integration troubleshooting</h3>
+        <p>When orders, invoices or contacts stop syncing between your platform and your accounting system, I find out why and get it moving again.</p>
+        <ul>
+          <li>MYOB, Xero, QuickBooks, NetSuite, Unleashed</li>
+          <li>Root cause analysis using logs and payloads</li>
+          <li>Plain-English write-ups of what broke and how to stop it recurring</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Data entry &amp; cleanup</h3>
+        <p>Accurate, high-volume entry and tidy-up work, from messy spreadsheets to records that need to be consistent across systems.</p>
+        <ul>
+          <li>Spreadsheet cleanup and formatting</li>
+          <li>Invoice, billing and payment reconciliation</li>
+          <li>Ticket and documentation logging</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>VA &amp; calendar coordination</h3>
+        <p>I keep your calendar, follow-ups and appointments in order so nothing slips between time zones.</p>
+        <ul>
+          <li>Calendar and inbox management</li>
+          <li>Appointment setting and confirmations</li>
+          <li>Cross-timezone meeting coordination</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section id="experience">
     <div class="section-head">
-      <span class="tag">01</span>
+      <span class="tag">02</span>
       <h2>Experience</h2>
     </div>
-    <p class="lead">Six-plus years across technical support, customer success, and ERP integrations — moving from banking and BPO into SaaS platform escalations.</p>
+    <p class="lead">Eight-plus years across technical support, customer success, and ERP integrations — moving from banking and BPO into SaaS platform escalations.</p>
 
     <div class="stream">
       <div class="entry is-current">
         <div class="entry-meta">
-          <span>May 2025 — Present</span>
+          <span>2025 — Present</span>
           <span class="status resolved">Current</span>
         </div>
         <h3>Technical Solutions Consultant</h3>
-        <div class="org">B2B SaaS Marketplace Platform (via Emapta)</div>
-        <p>Handle 30–50 escalated supplier and venue cases per month, covering a mix of technical, account, and customer experience issues — from ERP/accounting integration failures and payment reconciliation to platform and order-management concerns, on a platform serving thousands of suppliers and 50,000+ venue customers.</p>
+        <div class="org">Emapta · B2B SaaS Platform</div>
+        <p>Handle 30–50 escalated supplier and venue cases per month, covering a mix of technical, account, and customer experience issues — from ERP/accounting integration failures and payment reconciliation to platform and order-management concerns, on a B2B ordering platform serving a large supplier and customer base.</p>
         <ul>
           <li>Lead deep-dive technical investigations using audit logs, payload validation, and workflow testing to identify root cause on complex, multi-system incidents</li>
           <li>Troubleshoot and resolve sync issues across MYOB, Xero, QuickBooks, NetSuite, and Unleashed integrations</li>
-          <li>Coach Support Specialists through 1:1 feedback sessions, review case quality, and manage team performance when required</li>
+          <li>Coach Support Specialists through 1:1 feedback sessions and case quality reviews, helping lift resolution quality across the team</li>
           <li>Partner with engineering and product to document bugs and edge cases, driving prioritisation of fixes</li>
           <li>Schedule and coordinate calls between suppliers, venue customers, and Success Managers, managing calendars for escalation follow-ups and feedback sessions across time zones — including business owners across Australia</li>
           <li>Apply working knowledge of freight and delivery logistics where order fulfilment issues intersect with supplier and venue escalations</li>
@@ -398,51 +428,43 @@
       </div>
 
       <div class="entry">
-        <div class="entry-meta"><span>Apr 2024 — May 2025</span></div>
+        <div class="entry-meta"><span>2024 — 2025</span></div>
         <h3>Support Specialist</h3>
-        <div class="org">B2B SaaS Marketplace Platform (via Emapta)</div>
+        <div class="org">Emapta · B2B SaaS Platform</div>
         <p>Handled supplier and venue support concerns related to platform usage, orders, invoices, payments, and account management. Performed issue replication using MYOB and Xero sandbox environments and escalated cases requiring audit-log review.</p>
       </div>
 
       <div class="entry">
-        <div class="entry-meta"><span>Dec 2021 — Aug 2023</span></div>
+        <div class="entry-meta"><span>2021 — 2023</span></div>
         <h3>Customer Success Specialist (Banker)</h3>
         <div class="org">Wells Fargo</div>
-        <p>Resolved customer concerns on banking services, accounts, and digital access. Received consecutive Manager's Choice Awards for performance.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="section-head">
-      <span class="tag">02</span>
-      <h2>Projects</h2>
-    </div>
-    <p class="lead">Work built alongside the day job — from a hackathon diagnostic tool to internal documentation that cut down repeat investigation time.</p>
-
-    <div class="stream">
-      <div class="entry">
-        <div class="entry-meta">
-          <span>Hackathon</span>
-          <span class="status shipped">Shipped</span>
-        </div>
-        <h3>CronSequence</h3>
-        <p>A diagnostic and forecasting tool for a B2B SaaS marketplace's supplier scheduling system, built during a company hackathon. Led a four-person team on design and prototyping.</p>
+        <p>Resolved customer concerns across banking services, accounts, fees, and digital banking access.</p>
         <ul>
-          <li><strong>Diagnose</strong> — per-venue failure cause detection with suggested fix actions</li>
-          <li><strong>Simulate</strong> — pre-run dry-run forecasting, ahead of a scheduled sync</li>
+          <li>Guided customers through self-service and digital banking tools to improve their experience</li>
+          <li>Collaborated with internal teams to resolve escalated and complex customer concerns</li>
+          <li>Received consecutive Manager's Choice Awards (2022) for performance and customer service</li>
         </ul>
-        <p>Shaped key product decisions, including excluding payment failures from simulation forecasts due to their unforeseeable nature. Produced the presentation materials and handoff prompts for the team that picked it up after the hackathon.</p>
-        <div class="stack">HTML · JavaScript (prototype)</div>
       </div>
 
       <div class="entry">
-        <div class="entry-meta">
-          <span>Internal reference</span>
-          <span class="status published">Published</span>
-        </div>
-        <h3>NetSuite Date Offset Guide</h3>
-        <p>A reusable reference documenting how NetSuite's date-offset behaviour affects sync timing — written to cut down repeat investigation time on a recurring class of integration issue.</p>
+        <div class="entry-meta"><span>2021</span></div>
+        <h3>Technical Support Associate</h3>
+        <div class="org">Concentrix</div>
+        <p>Provided technical support across phone, email, and chat, configuring and troubleshooting networking devices, connectivity issues, and system performance concerns.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta"><span>2019 — 2021</span></div>
+        <h3>Account Associate</h3>
+        <div class="org">VXI Global Solutions</div>
+        <p>Handled customer billing concerns and resolved technical issues, using consultative communication and upselling to improve engagement. Recognised as Top Agent and Voice of Customer (VOC) Champion for customer satisfaction.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta"><span>2017 — 2019</span></div>
+        <h3>Retention Specialist / Outbound Sales / Back Office</h3>
+        <div class="org">TSD Global, Inc.</div>
+        <p>Managed customer retention initiatives and outbound sales campaigns, and supported back-office operations in a high-volume BPO environment.</p>
       </div>
     </div>
   </section>
@@ -462,6 +484,18 @@
         <span class="pill">QuickBooks</span>
         <span class="pill">NetSuite</span>
         <span class="pill">Unleashed</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h4>Banking & finance</h4>
+      <div class="pills">
+        <span class="pill">Account & Fee Resolution</span>
+        <span class="pill">Digital Banking Support</span>
+        <span class="pill">Billing & Payment Concerns</span>
+        <span class="pill">Payment Reconciliation</span>
+        <span class="pill">Invoice & Payment Troubleshooting</span>
+        <span class="pill">Escalated Account Cases</span>
       </div>
     </div>
 
@@ -495,14 +529,14 @@
 
   <footer id="contact">
     <div class="headline-sm">Let's talk.</div>
-    <p class="sub" style="margin-bottom:20px;">Open to Integration/API Developer, Technical Solutions, Support Engineering, Executive Assistant, Appointment Setter and Data-entry roles.</p>
+    <p class="sub" style="margin-bottom:20px;">Open to freelance and contract work in Integration Support, Technical Solutions, Support Engineering, Executive Assistance, Appointment Setting and Data Entry.</p>
     <div class="contact-row">
-      <a class="btn primary" href="mailto:careers.markjaybalasan@gmail.com">careers.markjaybalasan@gmail.com</a>
+      <a class="btn primary" href="mailto:mac.balasan@gmail.com">mac.balasan@gmail.com</a>
       <a class="btn" href="https://wa.me/639563097416" target="_blank" rel="noopener">WhatsApp</a>
       <a class="btn" href="https://www.linkedin.com/in/mac-balasan" target="_blank" rel="noopener">LinkedIn</a>
       <p class="meta" style="margin-top:12px;">Full CV available on request.</p>
     </div>
-    <p class="meta" style="margin-top:24px;">Manila City, Philippines</p>
+    <p class="meta" style="margin-top:24px;">Manila, Philippines</p>
   </footer>
 
 </main>
